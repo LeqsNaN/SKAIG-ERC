@@ -10,4 +10,6 @@ Edge attributes (extract files and put them into *bert_data/DATASET_NAME/*):
 [MELD](https://drive.google.com/file/d/15MGpqqLliT8KPZhZfp5ND5S2FKbtuYaq/view?usp=sharing)  
 
 We additionally provide the utterance representations and edge attributes of MELD to perform the training style like [COSMIC](https://aclanthology.org/2020.findings-emnlp.224/).  
-The data is in there [meld](https://drive.google.com/file/d/16GCSLum5d6lXn37FJ1lVML1Zb1kD7Ov2/view?usp=sharing). Extract the files and put them in *cosmic_data/meld/*
+The data is in here [meld](https://drive.google.com/file/d/16GCSLum5d6lXn37FJ1lVML1Zb1kD7Ov2/view?usp=sharing). Extract the files and put them in *cosmic_data/meld/*
+
+## Training
