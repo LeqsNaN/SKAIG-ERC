@@ -21,3 +21,6 @@ DailyDialog: `python gnn_train.py -index 1 -lr 1e-5 -choice 'cn' -pretrain 'robe
 EmoryNLP: `python gnn_train.py -index 1 -lr 1e-5 -choice 'cn' -pretrain 'roberta-large' -cn_num_layer 5 -sent_dim 300 -cn_nhead 6 -edge_dim 300 -cn_ff_dim 600 -cn_dropout 0.1 -hip 4 -seed 7 -residual_type 'none' -dataset_name 'EmoryNLP'`  
 
 MELD: `python gnn_train.py -index 1 -lr 8e-6 -choice 'cn' -pretrain 'roberta-large' -cn_num_layer 2 -sent_dim 200 -cn_nhead 4 -edge_dim 200 -cn_ff_dim 200 -cn_dropout 0.1 -hip 2 -seed 7 -residual_type 'none' -dataset_name 'MELD'`  
+
+For COSMIC style training, the command is:  
+`python cosmic_style_train.py -index 1 --edge_mapping --shuffle --beta --root_weight --use_gpu -dataset_name 'meld' -batch_size 8 -sent_dim 200 -ff_dim 200 -heads 4 -dropout 0.5 -num_layers 2 -edge_dim 200 -hop 3 -seed 7 -lr 1e-4 -l2 3e-4`
