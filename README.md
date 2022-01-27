@@ -24,3 +24,7 @@ MELD: `python gnn_train.py -index 1 -lr 8e-6 -choice 'cn' -pretrain 'roberta-lar
 
 For COSMIC style training, the command is:  
 `python cosmic_style_train.py -index 1 --edge_mapping --shuffle --beta --root_weight --use_gpu -dataset_name 'meld' -batch_size 8 -sent_dim 200 -ff_dim 200 -heads 4 -dropout 0.5 -num_layers 2 -edge_dim 200 -hop 3 -seed 7 -lr 1e-4 -l2 3e-4`
+
+## TRMSM
+The model is inserted into `MentalModel`, which can be activated by `-choice 'tr'` in *gnn_train.py*. Additionally, the hyper-params for it is started with 'tr_'.  
+The command for TRMSM: `Pending`. 
