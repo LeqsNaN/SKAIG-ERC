@@ -112,10 +112,10 @@ if __name__ == "__main__":
             for u in conv:
                 u_feature = {}
                 emb_output = get_atomic_embs(u, model, opt, data_loader, text_encoder)
-                u_feature['xWant'] = emb_output[0]
-                u_feature['oWant'] = emb_output[1]
-                u_feature['xIntent'] = emb_output[2]
-                u_feature['xEffect'] = emb_output[3]
+                u_feature['xWant'] = emb_output[0].cpu().numpy()
+                u_feature['oWant'] = emb_output[1].cpu().numpy()
+                u_feature['xIntent'] = emb_output[2].cpu().numpy()
+                u_feature['xEffect'] = emb_output[3].cpu().numpy()
                 conv_feature.append(u_feature)
             all_features.append(conv_feature)
         return all_features
